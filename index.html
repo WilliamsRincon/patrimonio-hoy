@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/index.js"></script>
   <link rel="stylesheet" href="./css/styles.css">
   <title>Patrimonio Hoy</title>
 </head>
@@ -69,67 +70,71 @@
 
         <div class="relative">
           <!-- Slider Arrows -->
-          <button
-            class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-8 bg-white shadow-md rounded-full p-3 z-20 hover:bg-gray-100">
+          <button id="unete-prev"
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-4 sm:-translate-x-8 bg-white shadow-md rounded-full p-3 z-20 hover:bg-gray-100">
             <span>&lt;</span>
           </button>
-          <button
-            class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-8 bg-white shadow-md rounded-full p-3 z-20 hover:bg-gray-100">
+          <button id="unete-next"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-4 sm:translate-x-8 bg-white shadow-md rounded-full p-3 z-20 hover:bg-gray-100">
             <span>&gt;</span>
           </button>
 
-          <!-- Slider Content -->
-          <div class="bg-white p-8 overflow-hidden">
-            <div class="flex space-x-8 overflow-x-auto pb-4 -mb-4"
-              style="scrollbar-width: none; -ms-overflow-style: none;"> <!-- Hides scrollbar but keeps functionality -->
+          <!-- Slider Content wrapper -->
+          <div class="bg-white p-6 sm:p-8 rounded-lg shadow-xl">
+            <!-- Swiper container for Únete -->
+            <div class="swiper unete-slider overflow-hidden">
+              <div class="swiper-wrapper"> <!-- Removed pb-4 -mb-4, let Swiper handle spacing -->
 
-              <!-- Slider Item 1 -->
-              <div class="flex-none w-72 text-center">
-                <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
-                  <img src="assets/images/icon-socio.png" alt="Conviértete en socio" class="w-16 h-16">
+                <!-- Slider Item 1 -->
+                <div class="swiper-slide flex-none w-64 sm:w-72 text-center">
+                  <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
+                    <img src="assets/images/icon-socio.png" alt="Conviértete en socio" class="w-16 h-16">
+                  </div>
+                  <h3 class="font-semibold text-lg text-gray-800 mb-1">Conviértete en socio</h3>
+                  <p class="text-sm text-gray-500">Presenta tu identificación oficial vigente, comprobante de domicilio
+                    y
+                    número de WhatsApp.</p>
                 </div>
-                <h3 class="font-semibold text-lg text-gray-800 mb-1">Conviértete en socio</h3>
-                <p class="text-sm text-gray-500">Presenta tu identificación oficial vigente, comprobante de domicilio y
-                  número de WhatsApp.</p>
-              </div>
 
-              <!-- Slider Item 2 -->
-              <div class="flex-none w-72 text-center">
-                <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
-                  <img src="assets/images/icon-pago.png" alt="Realiza tu primer pago semanal" class="w-16 h-16">
+                <!-- Slider Item 2 -->
+                <div class="swiper-slide flex-none w-64 sm:w-72 text-center">
+                  <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
+                    <img src="assets/images/icon-pago.png" alt="Realiza tu primer pago semanal" class="w-16 h-16">
+                  </div>
+                  <h3 class="font-semibold text-lg text-gray-800 mb-1">Realiza tu primer pago semanal</h3>
+                  <p class="text-sm text-gray-500">Elige el plan accesible que se adapte a tus necesidades.</p>
                 </div>
-                <h3 class="font-semibold text-lg text-gray-800 mb-1">Realiza tu primer pago semanal</h3>
-                <p class="text-sm text-gray-500">Elige el plan accesible que se adapte a tus necesidades.</p>
-              </div>
 
-              <!-- Slider Item 3 -->
-              <div class="flex-none w-72 text-center">
-                <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
-                  <img src="assets/images/icon-asesoria.png" alt="Recibe asesoría de vivienda" class="w-16 h-16">
+                <!-- Slider Item 3 -->
+                <div class="swiper-slide flex-none w-64 sm:w-72 text-center">
+                  <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
+                    <img src="assets/images/icon-asesoria.png" alt="Recibe asesoría de vivienda" class="w-16 h-16">
+                  </div>
+                  <h3 class="font-semibold text-lg text-gray-800 mb-1">Recibe asesoría de vivienda</h3>
+                  <p class="text-sm text-gray-500">Nuestro equipo de expertos te acompañará en cada etapa de tu
+                    proyecto.
+                  </p>
                 </div>
-                <h3 class="font-semibold text-lg text-gray-800 mb-1">Recibe asesoría de vivienda</h3>
-                <p class="text-sm text-gray-500">Nuestro equipo de expertos te acompañará en cada etapa de tu proyecto.
-                </p>
-              </div>
 
-              <!-- Slider Item 4 (Partially visible) -->
-              <div class="flex-none w-72 text-center">
-                <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
-                  <img src="assets/images/icon-materiales.png" alt="Recibe tus materiales a domicilio"
-                    class="w-16 h-16">
+                <!-- Slider Item 4 (Partially visible) -->
+                <div class="swiper-slide flex-none w-64 sm:w-72 text-center">
+                  <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
+                    <img src="assets/images/icon-materiales.png" alt="Recibe tus materiales a domicilio"
+                      class="w-16 h-16">
+                  </div>
+                  <h3 class="font-semibold text-lg text-gray-800 mb-1">Recibe tus materiales a domicilio</h3>
+                  <p class="text-sm text-gray-500">Disfruta de materiales de calidad Cemex entregados directamente en tu
+                    hogar.</p>
                 </div>
-                <h3 class="font-semibold text-lg text-gray-800 mb-1">Recibe tus materiales a domicilio</h3>
-                <p class="text-sm text-gray-500">Disfruta de materiales de calidad Cemex entregados directamente en tu
-                  hogar.</p>
-              </div>
 
-              <!-- Slider Item 5 (Partially visible) -->
-              <div class="flex-none w-72 text-center">
-                <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
-                  <img src="assets/images/icon-suenos.png" alt="Construye tus sueños" class="w-16 h-16">
+                <!-- Slider Item 5 (Partially visible) -->
+                <div class="swiper-slide flex-none w-64 sm:w-72 text-center">
+                  <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
+                    <img src="assets/images/icon-suenos.png" alt="Construye tus sueños" class="w-16 h-16">
+                  </div>
+                  <h3 class="font-semibold text-lg text-gray-800 mb-1">Construye tus sueños</h3>
+                  <p class="text-sm text-gray-500">Comienza a transformar tu hogar con nosotros.</p>
                 </div>
-                <h3 class="font-semibold text-lg text-gray-800 mb-1">Construye tus sueños</h3>
-                <p class="text-sm text-gray-500">Comienza a transformar tu hogar con nosotros.</p>
               </div>
             </div>
           </div>
@@ -177,12 +182,13 @@
             </svg>
           </button>
 
-          <div class="overflow-hidden max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto">
-            <div id="sliderBeneficios" class="flex space-x-6 py-4 -mb-4"
-              style="overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; scroll-snap-type: x mandatory; scroll-padding: 0 1rem;">
+          <!-- Swiper container for Beneficios -->
+          <div class="swiper beneficios-slider overflow-hidden max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto">
+            <div class="swiper-wrapper py-4"> <!-- Removed -mb-4, Swiper handles this -->
 
               <!-- Card 1: Facilidades de pago -->
-              <div class="flex-none w-56 sm:w-60 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
+              <div
+                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
                 style="scroll-snap-align: start;">
                 <div class="flex justify-center items-center h-16 mb-3">
                   <img src="assets/images/beneficios-icon-facilidades.svg" alt="Facilidades de pago"
@@ -192,7 +198,8 @@
               </div>
 
               <!-- Card 2: Asesoría profesional -->
-              <div class="flex-none w-56 sm:w-60 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
+              <div
+                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
                 style="scroll-snap-align: start;">
                 <div class="flex justify-center items-center h-16 mb-3">
                   <img src="assets/images/beneficios-icon-asesoria.svg" alt="Asesoría profesional"
@@ -202,7 +209,8 @@
               </div>
 
               <!-- Card 3: Atención y servicio -->
-              <div class="flex-none w-56 sm:w-60 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
+              <div
+                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
                 style="scroll-snap-align: start;">
                 <div class="flex justify-center items-center h-16 mb-3">
                   <img src="assets/images/beneficios-icon-atencion.svg" alt="Atención y servicio"
@@ -212,7 +220,8 @@
               </div>
 
               <!-- Card 4: Entrega a domicilio -->
-              <div class="flex-none w-56 sm:w-60 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
+              <div
+                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
                 style="scroll-snap-align: start;">
                 <div class="flex justify-center items-center h-16 mb-3">
                   <img src="assets/images/beneficios-icon-entrega.svg" alt="Entrega a domicilio"
@@ -222,7 +231,8 @@
               </div>
 
               <!-- Card 5 (Example for overflow) -->
-              <div class="flex-none w-56 sm:w-60 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
+              <div
+                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
                 style="scroll-snap-align: start;">
                 <div class="flex justify-center items-center h-16 mb-3">
                   <img src="assets/images/beneficios-icon-placeholder.svg" alt="Placeholder"
@@ -236,7 +246,464 @@
       </div>
     </section>
 
+    <!-- Inicia tu proyecto de construcción Section -->
+    <section class="bg-indigo-50 py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <div class="md:grid md:grid-cols-2 md:gap-12 lg:gap-16 items-center">
+          <div class="mb-10 md:mb-0">
+            <img src="assets/images/inicia-proyecto-image.png" alt="Familia feliz con proyecto de construcción"
+              class="rounded-lg shadow-xl w-full h-auto object-cover" style="max-height: 400px;">
+          </div>
+          <div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-800 mb-5 leading-tight">
+              Inicia tu proyecto de construcción
+            </h2>
+            <p class="text-gray-600 mb-8 text-base lg:text-lg">
+              Solicita tu plan de construcción detallado con plazos flexibles para tu ampliación, remodelación o
+              construcción con asesoría profesional. Ten lista tu identificación oficial vigente, comprobante de
+              domicilio (de máximo 3 meses de antigüedad) y tu número de WhatsApp.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+              <a href="#solicitar-proyecto"
+                class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out">
+                Solicitar mi proyecto
+              </a>
+              <a href="#conocer-pasos"
+                class="bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-3 px-8 rounded-full border border-indigo-600 shadow-md text-center text-lg transition duration-150 ease-in-out">
+                Conocer los pasos
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos y esquemas de pago Section -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-800 mb-5 leading-tight">
+              Productos y esquemas de pago
+            </h2>
+            <p class="text-gray-600 mb-8 text-base lg:text-lg">
+              Tú eliges cuándo y dónde recibir tu material de construcción. Tenemos productos de calidad y opciones de
+              pago flexibles que se adaptan a tu proyecto y presupuesto.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 mb-8 md:mb-0">
+              <a href="#iniciar-proyecto-esquemas"
+                class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out flex items-center justify-center">
+                Iniciar mi proyecto <span class="ml-2">→</span>
+              </a>
+              <a href="#testimonios"
+                class="bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-3 px-8 rounded-full border border-gray-300 shadow-sm text-center text-lg transition duration-150 ease-in-out">
+                Testimonios
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <div
+              class="bg-indigo-50 p-8 rounded-full w-32 h-32 md:w-40 md:h-40 flex items-center justify-center shadow-lg cursor-pointer hover:bg-indigo-100 transition-colors">
+              <svg class="w-12 h-12 md:w-16 md:h-16 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Asesoría Section -->
+    <section class="bg-indigo-50 py-12 md:py-16">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center bg-white p-8 md:p-10 rounded-xl shadow-xl">
+          <h3 class="text-xl sm:text-2xl font-bold text-indigo-800 mb-4 md:mb-0 text-center md:text-left">
+            ¿Necesitas asesoría de vivienda para tu proyecto?
+          </h3>
+          <a href="#iniciar-proyecto-asesoria"
+            class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out whitespace-nowrap">
+            Iniciar mi proyecto
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materiales que puedes adquirir Section -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-indigo-800 mb-4">Materiales que puedes adquirir</h2>
+        <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+          Tu proyecto de construcción merece la mejor calidad. Aquí tenemos todo lo necesario.
+        </p>
+
+        <div class="relative">
+          <button id="materiales-prev"
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-3 sm:-translate-x-5 bg-white text-indigo-600 rounded-full p-0 z-30 hover:bg-gray-100 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md border border-gray-300">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button id="materiales-next"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-3 sm:translate-x-5 bg-white text-indigo-600 rounded-full p-0 z-30 hover:bg-gray-100 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md border border-gray-300">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+          
+          <div
+            class="swiper materiales-slider overflow-hidden max-w-xs sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto">
+            <div class="swiper-wrapper py-4">
+              <!-- Material Card Example (Repeat for each item) -->
+              <div class="swiper-slide">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
+                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
+                    <img src="assets/images/material-cemex.png" alt="Productos Cemex"
+                      class="max-h-full max-w-full object-contain p-2">
+                  </div>
+                  <div class="p-4 text-center">
+                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Productos Cemex</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
+                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
+                    <img src="assets/images/material-acero.png" alt="Aceros"
+                      class="max-h-full max-w-full object-contain p-2">
+                  </div>
+                  <div class="p-4 text-center">
+                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Aceros</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
+                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
+                    <img src="assets/images/material-agregados.png" alt="Agregados"
+                      class="max-h-full max-w-full object-contain p-2">
+                  </div>
+                  <div class="p-4 text-center">
+                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Agregados</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
+                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
+                    <img src="assets/images/material-prefabricados.png" alt="Prefabricados"
+                      class="max-h-full max-w-full object-contain p-2">
+                  </div>
+                  <div class="p-4 text-center">
+                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Prefabricados</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
+                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
+                    <img src="assets/images/material-plomeria.png" alt="Plomería"
+                      class="max-h-full max-w-full object-contain p-2">
+                  </div>
+                  <div class="p-4 text-center">
+                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Plomería</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
+                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
+                    <img src="assets/images/material-bano.png" alt="Muebles para baño"
+                      class="max-h-full max-w-full object-contain p-2">
+                  </div>
+                  <div class="p-4 text-center">
+                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Muebles para baño</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
+                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
+                    <img src="assets/images/material-electrico.png" alt="Material Eléctrico"
+                      class="max-h-full max-w-full object-contain p-2">
+                  </div>
+                  <div class="p-4 text-center">
+                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Material Eléctrico</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
+                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
+                    <img src="assets/images/material-pisos.png" alt="Pisos y azulejos"
+                      class="max-h-full max-w-full object-contain p-2">
+                  </div>
+                  <div class="p-4 text-center">
+                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Pisos y azulejos</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
+                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
+                    <img src="assets/images/material-ferreteria.png" alt="Ferretería"
+                      class="max-h-full max-w-full object-contain p-2">
+                  </div>
+                  <div class="p-4 text-center">
+                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Ferretería</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more slides as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promociones Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl sm:text-4xl font-bold text-indigo-800 mb-12 text-center">Promociones</h2>
+        <div class="relative">
+          <button id="promociones-prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-3 sm:-translate-x-6 bg-white text-indigo-600 rounded-full p-0 z-30 hover:bg-gray-100 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md border border-gray-300">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+          </button>
+          <button id="promociones-next" class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-3 sm:translate-x-6 bg-white text-indigo-600 rounded-full p-0 z-30 hover:bg-gray-100 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md border border-gray-300">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+          </button>
+          <div class="swiper promociones-slider overflow-hidden max-w-xs sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto">
+            <div class="swiper-wrapper py-4">
+              <!-- Promo Card 1 -->
+              <div class="swiper-slide h-auto">
+                <div class="bg-blue-800 text-white rounded-lg shadow-xl p-6 flex flex-col justify-between h-full" style="background-image: url('assets/images/promo-card-bg.png'); background-repeat: no-repeat; background-position: bottom center; background-size: contain;">
+                  <div>
+                    <h3 class="text-xl font-bold mb-2">¡Gana hasta 15,000 puntos en material de construcción!</h3>
+                    <p class="text-sm mb-1">Obtén un folio por cada 2 pagos semanales del mes y participa.</p>
+                    <p class="text-xs opacity-80 mb-4">Válido del 1 de marzo al 30 de abril de 2025.</p>
+                  </div>
+                  <a href="#" class="mt-auto bg-gray-600 hover:bg-gray-500 text-white font-semibold py-2 px-4 rounded-md text-center text-sm transition duration-150 ease-in-out self-start">Más información</a>
+                </div>
+              </div>
+              <!-- Promo Card 2 -->
+              <div class="swiper-slide h-auto">
+                <div class="bg-blue-800 text-white rounded-lg shadow-xl p-6 flex flex-col justify-between h-full" style="background-image: url('assets/images/promo-card-bg.png'); background-repeat: no-repeat; background-position: bottom center; background-size: contain;">
+                  <div>
+                    <h3 class="text-xl font-bold mb-2">Gana 10 mil puntos o equipos electrónicos</h3>
+                    <p class="text-sm mb-1">1. Descarga la app de Patrimonio Hoy.</p>
+                    <p class="text-sm mb-1">2. Inicia tu proyecto</p>
+                    <p class="text-sm mb-1">Y recibe un folio para participar.</p>
+                    <p class="text-xs opacity-80 mb-4">Válido del 15 de enero al 31 de mayo de 2025.</p>
+                  </div>
+                  <a href="#" class="mt-auto bg-gray-600 hover:bg-gray-500 text-white font-semibold py-2 px-4 rounded-md text-center text-sm transition duration-150 ease-in-out self-start">Más información</a>
+                </div>
+              </div>
+              <!-- Promo Card 3 -->
+              <div class="swiper-slide h-auto">
+                <div class="bg-blue-800 text-white rounded-lg shadow-xl p-6 flex flex-col justify-between h-full" style="background-image: url('assets/images/promo-card-bg.png'); background-repeat: no-repeat; background-position: bottom center; background-size: contain;">
+                  <div>
+                    <p class="text-xs uppercase tracking-wider opacity-80 mb-1">Tagline</p>
+                    <h3 class="text-xl font-bold mb-2">Promoción 3</h3>
+                    <p class="text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit semper dalara cc lacus vel facilisis volutpat est velitolm.</p>
+                  </div>
+                  <a href="#" class="mt-auto bg-gray-600 hover:bg-gray-500 text-white font-semibold py-2 px-4 rounded-md text-center text-sm transition duration-150 ease-in-out self-start">See more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Construye tu futuro / Únete al equipo Section -->
+    <section class="bg-indigo-600 text-white py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <div class="md:grid md:grid-cols-2 gap-12 items-center">
+          <div class="mb-10 md:mb-0 text-center md:text-left">
+            <a href="#" class="text-indigo-300 hover:text-indigo-200 transition-colors text-sm font-semibold mb-2 inline-block">Construye tu futuro con nosotros</a>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              Únete a Patrimonio Hoy y sé parte del equipo que transforma vidas
+            </h2>
+            <a href="#contactanos" class="bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out">
+              Contáctanos
+            </a>
+          </div>
+          <div class="flex justify-center md:justify-end">
+            <img src="assets/images/unete-equipo-familia.png" alt="Equipo Patrimonio Hoy con familia" class="rounded-lg shadow-xl w-full max-w-md h-auto object-cover" style="max-height: 450px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoniales Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl sm:text-4xl font-bold text-indigo-800 mb-3">Testimoniales</h2>
+          <p class="text-gray-600 max-w-xl mx-auto">Más de 650 mil familias han construido la casa de sus sueño con Patrimonio Hoy. Conoce algunas de sus historias.</p>
+        </div>
+        <div class="flex justify-center md:justify-end space-x-4 mb-8">
+          <a href="#descarga-app-testimonial" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-full shadow-md text-center text-base transition duration-150 ease-in-out flex items-center">
+            Descarga la app <span class="ml-2 text-lg">→</span>
+          </a>
+          <a href="#dejanos-datos-testimonial" class="bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-2 px-6 rounded-full border border-gray-300 shadow-sm text-center text-base transition duration-150 ease-in-out">
+            Déjanos tus datos
+          </a>
+        </div>
+        <div class="relative">
+          <div class="swiper testimoniales-slider overflow-hidden">
+            <div class="swiper-wrapper pb-12"> <!-- Added pb-12 for pagination dots -->
+              <!-- Testimonial Card 1 -->
+              <div class="swiper-slide h-auto">
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col sm:flex-row items-start h-full border border-gray-200">
+                  <img src="assets/images/testimonial-zoraida.png" alt="Zoraida Magali" class="w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                  <div>
+                    <p class="text-gray-600 mb-3 text-sm italic leading-relaxed">"Su esfuerzo y dedicación la llevaron a construir su casa desde cero gracias al apoyo de Patrimonio Hoy. Ser madre soltera no fue un obstáculo para lograr darle a sus hijos un hogar en donde pueden vivir y desarrollarse plenamente."</p>
+                    <p class="font-semibold text-indigo-700">Zoraida Magali</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial Card 2 -->
+              <div class="swiper-slide h-auto">
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col sm:flex-row items-start h-full border border-gray-200">
+                  <img src="assets/images/testimonial-magdalena.png" alt="Magdalena Sánchez" class="w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                  <div>
+                    <p class="text-gray-600 mb-3 text-sm italic leading-relaxed">"Ahora sí ya tenemos nuestra casa donde vivir, mis hijos viven tranquilos, jugando, disfrutan su casa"</p>
+                    <p class="font-semibold text-indigo-700">Magdalena Sánchez</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial Card 3 -->
+              <div class="swiper-slide h-auto">
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col sm:flex-row items-start h-full border border-gray-200">
+                  <img src="assets/images/testimonial-esperanza.png" alt="Esperanza Morales" class="w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                  <div>
+                    <p class="text-gray-600 mb-3 text-sm italic leading-relaxed">"Quería tener una casa grande, no quería vivir en una casa de cartón. No me imaginaba tener una casa como la que tengo ahora"</p>
+                    <p class="font-semibold text-indigo-700">Esperanza Morales</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial Card 4 -->
+              <div class="swiper-slide h-auto">
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col sm:flex-row items-start h-full border border-gray-200">
+                  <img src="assets/images/testimonial-irma.png" alt="Irma Yolanda" class="w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                  <div>
+                    <p class="text-gray-600 mb-3 text-sm italic leading-relaxed">"Ha podido mejorar su casa y la de sus dos hijos."</p>
+                    <p class="font-semibold text-indigo-700">Irma Yolanda</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination testimoniales-pagination text-center pt-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section: Construye tu Patrimonio Hoy -->
+    <section class="bg-indigo-50 py-16 md:py-20">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-indigo-800 mb-3">Construye tu Patrimonio Hoy</h2>
+        <p class="text-gray-600 mb-8 max-w-lg mx-auto">Déjanos tus datos y pronto nos comunicaremos</p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
+          <a href="#descarga-app-final" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out">
+            Descarga la app
+          </a>
+          <a href="#dejanos-datos-final" class="bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-3 px-8 rounded-full border border-indigo-600 shadow-sm text-center text-lg transition duration-150 ease-in-out">
+            Déjanos tus datos
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
+  <footer class="bg-slate-700 text-slate-300 pt-16 pb-8">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-6 gap-8 mb-12">
+        <!-- Logo and Social -->
+        <div class="md:col-span-2 mb-8 md:mb-0">
+          <a href="#" class="text-2xl font-bold text-white mb-4 inline-block">.:: brix templates</a>
+          <div class="flex space-x-3 mt-4">
+            <a href="#"
+              class="bg-slate-600 hover:bg-slate-500 text-white w-8 h-8 rounded-md flex items-center justify-center transition-colors">F</a>
+            <a href="#"
+              class="bg-slate-600 hover:bg-slate-500 text-white w-8 h-8 rounded-md flex items-center justify-center transition-colors">T</a>
+            <a href="#"
+              class="bg-slate-600 hover:bg-slate-500 text-white w-8 h-8 rounded-md flex items-center justify-center transition-colors">I</a>
+            <a href="#"
+              class="bg-slate-600 hover:bg-slate-500 text-white w-8 h-8 rounded-md flex items-center justify-center transition-colors">L</a>
+            <a href="#"
+              class="bg-slate-600 hover:bg-slate-500 text-white w-8 h-8 rounded-md flex items-center justify-center transition-colors">Y</a>
+          </div>
+        </div>
+
+        <!-- Product Links -->
+        <div>
+          <h5 class="font-semibold text-white mb-4">Product</h5>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Case studies</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Reviews</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Updates</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Links -->
+        <div>
+          <h5 class="font-semibold text-white mb-4">Company</h5>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Contact us</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Culture</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Support Links -->
+        <div>
+          <h5 class="font-semibold text-white mb-4">Support</h5>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">Getting started</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Help center</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Server status</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Report a bug</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Chat support</a></li>
+          </ul>
+        </div>
+
+        <!-- Downloads Links -->
+        <div>
+          <h5 class="font-semibold text-white mb-4">Downloads</h5>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">iOS</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Android</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Mac</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Windows</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Chrome</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-600 pt-8 text-center text-sm">
+        <p>&copy; <span id="currentYear"></span> BRIX Templates | All Rights Reserved |
+          <a href="#" class="underline hover:text-white transition-colors">Terms and Conditions</a> |
+          <a href="#" class="underline hover:text-white transition-colors">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 
