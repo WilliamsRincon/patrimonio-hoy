@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./js/index.js"></script>
-  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./assets/js/index.js"></script>
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <title>Patrimonio Hoy</title>
 </head>
 
@@ -21,13 +21,13 @@
         <span class="text-blue-600">.::</span> brix templates
       </div>
       <nav class="space-x-4 flex items-center">
-        <a href="#conocenos" class="text-gray-700 hover:text-blue-600">Conócenos</a>
-        <a href="#socios" class="text-gray-700 hover:text-blue-600">Socios</a>
-        <a href="#equipo" class="text-gray-700 hover:text-blue-600">Se parte del equipo</a>
-        <a href="#aliados" class="text-gray-700 hover:text-blue-600">Aliados</a>
-        <a href="#bienestar" class="text-gray-700 hover:text-blue-600">Tips de bienestar</a>
-        <a href="#promociones" class="text-gray-700 hover:text-blue-600">Beneficios y promociones</a>
-        <a href="#contacto" class="text-gray-700 hover:text-blue-600">Contacto</a>
+        <a href="#conocenos" class="hover:text-blue-600">Conócenos</a>
+        <a href="#socios" class="hover:text-blue-600">Socios</a>
+        <a href="#equipo" class="hover:text-blue-600">Se parte del equipo</a>
+        <a href="#aliados" class="hover:text-blue-600">Aliados</a>
+        <a href="#bienestar" class="hover:text-blue-600">Tips de bienestar</a>
+        <a href="#promociones" class="hover:text-blue-600">Beneficios y promociones</a>
+        <a href="#contacto" class="hover:text-blue-600">Contacto</a>
         <a href="#login" class="bg-indigo-500 text-white px-4 py-2 rounded-full hover:bg-indigo-600">Login</a>
       </nav>
     </div>
@@ -35,7 +35,7 @@
 
   <main>
     <section class="banner-section relative bg-blue-700 text-white"
-      style="width: 1440px; height: 903px; margin: 0 auto; background-image: url('assets/images/grid-pattern.png');">
+      style="width: 1440px; height: 903px; margin: 0 auto; background-image: url('assets/img/PH-HeaderFondo_1440x785_web_v1\ 1.png');">
       <div class="container mx-auto px-6 py-16 h-full flex flex-col justify-center relative z-10">
         <div class="max-w-xl">
           <h1 class="text-5xl font-bold leading-tight mb-4">Construye tu casa con<br>Patrimonio Hoy</h1>
@@ -53,34 +53,34 @@
           </div>
         </div>
       </div>
-
-      <!-- Decorative images -->
-
-      <!-- <img src="assets/images/cemex-patrimonio-hoy-logo.png" alt="CEMEX Patrimonio Hoy" class="absolute top-10 right-10 z-0" style="width: 150px;">
-            <img src="assets/images/family-image.png" alt="Family" class="absolute bottom-0 right-40 z-0" style="width: 500px;">
-            <img src="assets/images/sun-graphic.png" alt="Sun" class="absolute top-1/3 right-20 z-0" style="width: 100px;">
-            <img src="assets/images/houses-left.png" alt="Houses" class="absolute bottom-0 left-0 z-0" style="width: 300px;">
-            <img src="assets/images/houses-right.png" alt="Houses" class="absolute bottom-0 right-0 z-0" style="width: 300px;"> -->
     </section>
 
-    <section class="py-16 bg-gray-50">
+    <section class="py-16">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold text-gray-800 mb-2">Únete a Patrimonio Hoy</h2>
-        <p class="text-gray-600 mb-12">5 pasos para empezar a construir tu casa</p>
+        <h2 class="text-[36px] font-bold mb-2" style="color: #5D5A88;">Únete a Patrimonio Hoy</h2>
+        <p class="mb-12 text-[18px]">5 pasos para empezar a construir tu casa</p>
 
         <div class="relative">
           <!-- Slider Arrows -->
           <button id="unete-prev"
-            class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-4 sm:-translate-x-8 bg-white shadow-md rounded-full p-3 z-20 hover:bg-gray-100">
-            <span>&lt;</span>
+            style="background-color: #5D5A88;"
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-3 sm:-translate-x-5 text-white rounded-full p-0 z-30 hover:bg-indigo-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+            </svg>
           </button>
           <button id="unete-next"
-            class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-4 sm:translate-x-8 bg-white shadow-md rounded-full p-3 z-20 hover:bg-gray-100">
-            <span>&gt;</span>
+            style="background-color: #5D5A88;"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-3 sm:translate-x-5 text-white rounded-full p-0 z-30 hover:bg-indigo-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+            </svg>
           </button>
 
           <!-- Slider Content wrapper -->
-          <div class="bg-white p-6 sm:p-8 rounded-lg shadow-xl">
+          <div class="bg-white p-6 sm:p-8 rounded-lg">
             <!-- Swiper container for Únete -->
             <div class="swiper unete-slider overflow-hidden">
               <div class="swiper-wrapper"> <!-- Removed pb-4 -mb-4, let Swiper handle spacing -->
@@ -88,10 +88,10 @@
                 <!-- Slider Item 1 -->
                 <div class="swiper-slide flex-none w-64 sm:w-72 text-center">
                   <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
-                    <img src="assets/images/icon-socio.png" alt="Conviértete en socio" class="w-16 h-16">
+                    <img src="assets/img/hands.png" alt="Conviértete en socio" class="w-16 h-16">
                   </div>
-                  <h3 class="font-semibold text-lg text-gray-800 mb-1">Conviértete en socio</h3>
-                  <p class="text-sm text-gray-500">Presenta tu identificación oficial vigente, comprobante de domicilio
+                  <h3 class="font-semibold text-[28px] mb-1">Conviértete en socio</h3>
+                  <p class="text-[18px]">Presenta tu identificación oficial vigente, comprobante de domicilio
                     y
                     número de WhatsApp.</p>
                 </div>
@@ -99,19 +99,19 @@
                 <!-- Slider Item 2 -->
                 <div class="swiper-slide flex-none w-64 sm:w-72 text-center">
                   <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
-                    <img src="assets/images/icon-pago.png" alt="Realiza tu primer pago semanal" class="w-16 h-16">
+                    <img src="assets/img/wallet.png" alt="Realiza tu primer pago semanal" class="w-16 h-16">
                   </div>
-                  <h3 class="font-semibold text-lg text-gray-800 mb-1">Realiza tu primer pago semanal</h3>
-                  <p class="text-sm text-gray-500">Elige el plan accesible que se adapte a tus necesidades.</p>
+                  <h3 class="font-semibold text-[28px] mb-1">Realiza tu primer pago semanal</h3>
+                  <p class="text-[18px]">Elige el plan accesible que se adapte a tus necesidades.</p>
                 </div>
 
                 <!-- Slider Item 3 -->
                 <div class="swiper-slide flex-none w-64 sm:w-72 text-center">
                   <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
-                    <img src="assets/images/icon-asesoria.png" alt="Recibe asesoría de vivienda" class="w-16 h-16">
+                    <img src="assets/img/book.png" alt="Recibe asesoría de vivienda" class="w-16 h-16">
                   </div>
-                  <h3 class="font-semibold text-lg text-gray-800 mb-1">Recibe asesoría de vivienda</h3>
-                  <p class="text-sm text-gray-500">Nuestro equipo de expertos te acompañará en cada etapa de tu
+                  <h3 class="font-semibold text-[28px] mb-1">Recibe asesoría de vivienda</h3>
+                  <p class="text-[18px]">Nuestro equipo de expertos te acompañará en cada etapa de tu
                     proyecto.
                   </p>
                 </div>
@@ -119,21 +119,21 @@
                 <!-- Slider Item 4 (Partially visible) -->
                 <div class="swiper-slide flex-none w-64 sm:w-72 text-center">
                   <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
-                    <img src="assets/images/icon-materiales.png" alt="Recibe tus materiales a domicilio"
+                    <img src="assets/img/materials.png" alt="Recibe tus materiales a domicilio"
                       class="w-16 h-16">
                   </div>
-                  <h3 class="font-semibold text-lg text-gray-800 mb-1">Recibe tus materiales a domicilio</h3>
-                  <p class="text-sm text-gray-500">Disfruta de materiales de calidad Cemex entregados directamente en tu
+                  <h3 class="font-semibold text-[28px] mb-1">Recibe tus materiales a domicilio</h3>
+                  <p class="text-[18px]">Disfruta de materiales de calidad Cemex entregados directamente en tu
                     hogar.</p>
                 </div>
 
                 <!-- Slider Item 5 (Partially visible) -->
                 <div class="swiper-slide flex-none w-64 sm:w-72 text-center">
                   <div class="bg-indigo-50 p-4 rounded-full inline-block mb-4">
-                    <img src="assets/images/icon-suenos.png" alt="Construye tus sueños" class="w-16 h-16">
+                    <img src="assets/img/family_house.png" alt="Construye tus sueños" class="w-16 h-16">
                   </div>
-                  <h3 class="font-semibold text-lg text-gray-800 mb-1">Construye tus sueños</h3>
-                  <p class="text-sm text-gray-500">Comienza a transformar tu hogar con nosotros.</p>
+                  <h3 class="font-semibold text-[28px] mb-1">Construye tus sueños</h3>
+                  <p class="text-[18px]">Comienza a transformar tu hogar con nosotros.</p>
                 </div>
               </div>
             </div>
@@ -143,11 +143,11 @@
         <!-- Action Buttons -->
         <div class="mt-12 flex justify-center space-x-4">
           <a href="#descarga-app-slider"
-            class="bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-800 flex items-center text-lg">
+            class="text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-800 flex items-center text-lg" style="background-color: #5D5A88;">
             Descarga la app <span class="ml-2">→</span>
           </a>
           <a href="#dejanos-datos-slider"
-            class="border border-indigo-700 text-indigo-700 px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 hover:text-white text-lg">
+            class="border border-indigo-700 px-8 py-3 rounded-full hover:bg-indigo-700 hover:text-white text-lg">
             Déjanos tus datos
           </a>
         </div>
@@ -157,8 +157,8 @@
     <!-- Beneficios de Patrimonio Hoy Section -->
     <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold text-indigo-700 mb-4">Beneficios de Patrimonio Hoy</h2>
-        <p class="text-gray-600 mb-12 max-w-3xl mx-auto">
+        <h2 class="text-4xl font-bold mb-4">Beneficios de Patrimonio Hoy</h2>
+        <p class="mb-12 max-w-3xl mx-auto">
           Facilita el acceso a materiales de construcción de calidad a familias que desean mejorar, ampliar o construir
           su casa,
           mediante un programa de ahorro programado y entrega planificada de materiales. Gracias a la asesoría de
@@ -168,14 +168,16 @@
 
         <div class="relative">
           <button id="prevBeneficios"
-            class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-3 sm:-translate-x-5 bg-indigo-500 text-white rounded-full p-0 z-30 hover:bg-indigo-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md">
+            style="background-color: #5D5A88;"
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-3 sm:-translate-x-5 text-white rounded-full p-0 z-30 hover:bg-indigo-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md">
             <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
             </svg>
           </button>
           <button id="nextBeneficios"
-            class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-3 sm:translate-x-5 bg-indigo-500 text-white rounded-full p-0 z-30 hover:bg-indigo-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md">
+            style="background-color: #5D5A88;"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-3 sm:translate-x-5 text-white rounded-full p-0 z-30 hover:bg-indigo-600 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md">
             <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
@@ -188,58 +190,58 @@
 
               <!-- Card 1: Facilidades de pago -->
               <div
-                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
+                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl text-center border border-gray-100"
                 style="scroll-snap-align: start;">
                 <div class="flex justify-center items-center h-16 mb-3">
-                  <img src="assets/images/beneficios-icon-facilidades.svg" alt="Facilidades de pago"
+                  <img src="assets/img/beneficios/PH-BeneficiosFondo-Pagos_72x72_web_v1 2.png" alt="Facilidades de pago"
                     class="h-10 w-10 text-indigo-600">
                 </div>
-                <h3 class="font-semibold text-gray-800 text-sm sm:text-base leading-tight">Facilidades de pago</h3>
+                <h3 class="font-semibold text-[28px] sm:text-base leading-tight">Facilidades de pago</h3>
               </div>
 
               <!-- Card 2: Asesoría profesional -->
               <div
-                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
+                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl text-center border border-gray-100"
                 style="scroll-snap-align: start;">
                 <div class="flex justify-center items-center h-16 mb-3">
-                  <img src="assets/images/beneficios-icon-asesoria.svg" alt="Asesoría profesional"
+                  <img src="assets/img/beneficios/PH-BeneficiosFondo-Asesoria_72x72_web_v1 1.png" alt="Asesoría profesional"
                     class="h-10 w-10 text-indigo-600">
                 </div>
-                <h3 class="font-semibold text-gray-800 text-sm sm:text-base leading-tight">Asesoría profesional</h3>
+                <h3 class="font-semibold text-[28px] sm:text-base leading-tight">Asesoría profesional</h3>
               </div>
 
               <!-- Card 3: Atención y servicio -->
               <div
-                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
+                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl text-center border border-gray-100"
                 style="scroll-snap-align: start;">
                 <div class="flex justify-center items-center h-16 mb-3">
-                  <img src="assets/images/beneficios-icon-atencion.svg" alt="Atención y servicio"
+                  <img src="assets/img/beneficios/PH-BeneficiosFondo-Atencion_72x72_web_v1 1.png" alt="Atención y servicio"
                     class="h-10 w-10 text-indigo-600">
                 </div>
-                <h3 class="font-semibold text-gray-800 text-sm sm:text-base leading-tight">Atención y servicio</h3>
+                <h3 class="font-semibold text-[28px] sm:text-base leading-tight">Atención y servicio</h3>
               </div>
 
               <!-- Card 4: Entrega a domicilio -->
               <div
-                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
+                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl text-center border border-gray-100"
                 style="scroll-snap-align: start;">
                 <div class="flex justify-center items-center h-16 mb-3">
-                  <img src="assets/images/beneficios-icon-entrega.svg" alt="Entrega a domicilio"
+                  <img src="assets/img/beneficios/PH-BeneficiosFondo-Entrega_72x72_web_v1 1.png" alt="Entrega a domicilio"
                     class="h-10 w-10 text-indigo-600">
                 </div>
-                <h3 class="font-semibold text-gray-800 text-sm sm:text-base leading-tight">Entrega a domicilio</h3>
+                <h3 class="font-semibold text-[28px] sm:text-base leading-tight">Entrega a domicilio</h3>
               </div>
 
               <!-- Card 5 (Example for overflow) -->
-              <div
-                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl shadow-xl text-center border border-gray-100"
+              <!-- <div
+                class="swiper-slide flex-none w-52 sm:w-56 bg-white p-5 rounded-2xl text-center border border-gray-100"
                 style="scroll-snap-align: start;">
                 <div class="flex justify-center items-center h-16 mb-3">
                   <img src="assets/images/beneficios-icon-placeholder.svg" alt="Placeholder"
                     class="h-10 w-10 text-indigo-600">
                 </div>
                 <h3 class="font-semibold text-gray-800 text-sm sm:text-base leading-tight">Otro Beneficio</h3>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -251,25 +253,26 @@
       <div class="container mx-auto px-6">
         <div class="md:grid md:grid-cols-2 md:gap-12 lg:gap-16 items-center">
           <div class="mb-10 md:mb-0">
-            <img src="assets/images/inicia-proyecto-image.png" alt="Familia feliz con proyecto de construcción"
+            <img src="assets/img/PH-HeaderFondo-ProyectoConstruccion_555x280_web_v1 1.png" alt="Familia feliz con proyecto de construcción"
               class="rounded-lg shadow-xl w-full h-auto object-cover" style="max-height: 400px;">
           </div>
           <div>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-800 mb-5 leading-tight">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5 leading-tight">
               Inicia tu proyecto de construcción
             </h2>
-            <p class="text-gray-600 mb-8 text-base lg:text-lg">
+            <p class="mb-8 text-base lg:text-lg">
               Solicita tu plan de construcción detallado con plazos flexibles para tu ampliación, remodelación o
               construcción con asesoría profesional. Ten lista tu identificación oficial vigente, comprobante de
               domicilio (de máximo 3 meses de antigüedad) y tu número de WhatsApp.
             </p>
             <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
               <a href="#solicitar-proyecto"
-                class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out">
+                style="background-color: #5D5A88;"
+                class="hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out">
                 Solicitar mi proyecto
               </a>
               <a href="#conocer-pasos"
-                class="bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-3 px-8 rounded-full border border-indigo-600 shadow-md text-center text-lg transition duration-150 ease-in-out">
+                class="bg-white hover:bg-gray-100 font-semibold py-3 px-8 rounded-full border border-indigo-600 shadow-md text-center text-lg transition duration-150 ease-in-out">
                 Conocer los pasos
               </a>
             </div>
@@ -283,20 +286,21 @@
       <div class="container mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-800 mb-5 leading-tight">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5 leading-tight">
               Productos y esquemas de pago
             </h2>
-            <p class="text-gray-600 mb-8 text-base lg:text-lg">
+            <p class="mb-8 text-base lg:text-lg">
               Tú eliges cuándo y dónde recibir tu material de construcción. Tenemos productos de calidad y opciones de
               pago flexibles que se adaptan a tu proyecto y presupuesto.
             </p>
             <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 mb-8 md:mb-0">
               <a href="#iniciar-proyecto-esquemas"
-                class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out flex items-center justify-center">
+                style="background-color: #5D5A88;"
+                class="hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out flex items-center justify-center">
                 Iniciar mi proyecto <span class="ml-2">→</span>
               </a>
               <a href="#testimonios"
-                class="bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-3 px-8 rounded-full border border-gray-300 shadow-sm text-center text-lg transition duration-150 ease-in-out">
+                class="bg-white hover:bg-gray-100 font-semibold py-3 px-8 rounded-full border border-gray-300 shadow-sm text-center text-lg transition duration-150 ease-in-out">
                 Testimonios
               </a>
             </div>
@@ -304,7 +308,7 @@
           <div class="flex justify-center items-center">
             <div
               class="bg-indigo-50 p-8 rounded-full w-32 h-32 md:w-40 md:h-40 flex items-center justify-center shadow-lg cursor-pointer hover:bg-indigo-100 transition-colors">
-              <svg class="w-12 h-12 md:w-16 md:h-16 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"
+              <svg class="w-12 h-12 md:w-16 md:h-16" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
@@ -319,12 +323,13 @@
     <!-- CTA Asesoría Section -->
     <section class="bg-indigo-50 py-12 md:py-16">
       <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-center bg-white p-8 md:p-10 rounded-xl shadow-xl">
-          <h3 class="text-xl sm:text-2xl font-bold text-indigo-800 mb-4 md:mb-0 text-center md:text-left">
+        <div class="flex flex-col md:flex-row justify-between items-center p-8 md:p-10">
+          <h3 class="text-xl sm:text-2xl font-bold mb-4 md:mb-0 text-center md:text-left">
             ¿Necesitas asesoría de vivienda para tu proyecto?
           </h3>
           <a href="#iniciar-proyecto-asesoria"
-            class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out whitespace-nowrap">
+            style="background-color: #5D5A88;"
+            class="hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out whitespace-nowrap">
             Iniciar mi proyecto
           </a>
         </div>
@@ -334,21 +339,21 @@
     <!-- Materiales que puedes adquirir Section -->
     <section class="py-16 md:py-24 bg-white">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl sm:text-4xl font-bold text-indigo-800 mb-4">Materiales que puedes adquirir</h2>
-        <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Materiales que puedes adquirir</h2>
+        <p class="mb-12 max-w-2xl mx-auto">
           Tu proyecto de construcción merece la mejor calidad. Aquí tenemos todo lo necesario.
         </p>
 
         <div class="relative">
           <button id="materiales-prev"
-            class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-3 sm:-translate-x-5 bg-white text-indigo-600 rounded-full p-0 z-30 hover:bg-gray-100 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md border border-gray-300">
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-3 sm:-translate-x-5 bg-white rounded-full p-0 z-30 hover:bg-gray-100 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md border border-gray-300">
             <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
             </svg>
           </button>
           <button id="materiales-next"
-            class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-3 sm:translate-x-5 bg-white text-indigo-600 rounded-full p-0 z-30 hover:bg-gray-100 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md border border-gray-300">
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-3 sm:translate-x-5 bg-white rounded-full p-0 z-30 hover:bg-gray-100 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-md border border-gray-300">
             <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
@@ -360,101 +365,101 @@
             <div class="swiper-wrapper py-4">
               <!-- Material Card Example (Repeat for each item) -->
               <div class="swiper-slide">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
-                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
-                    <img src="assets/images/material-cemex.png" alt="Productos Cemex"
-                      class="max-h-full max-w-full object-contain p-2">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 flex flex-col">
+                  <div class="flex items-center justify-center">
+                    <img src="assets/img/materiales/cemento.png" alt="Productos Cemex"
+                      class="max-h-full max-w-full object-contain">
                   </div>
                   <div class="p-4 text-center">
-                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Productos Cemex</h4>
+                    <h4 class="font-semibold text-sm sm:text-base">Productos Cemex</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 flex flex-col">
+                  <div class="flex items-center justify-center">
+                    <img src="assets/img/materiales/alambre.png" alt="Aceros"
+                      class="max-h-full max-w-full object-contain">
+                  </div>
+                  <div class="p-4 text-center">
+                    <h4 class="font-semibold text-sm sm:text-base">Aceros</h4>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
-                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
-                    <img src="assets/images/material-acero.png" alt="Aceros"
-                      class="max-h-full max-w-full object-contain p-2">
+                  <div class="flex items-center justify-center">
+                    <img src="assets/img/materiales/grava.png" alt="Agregados"
+                      class="max-h-full max-w-full object-contain">
                   </div>
                   <div class="p-4 text-center">
-                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Aceros</h4>
+                    <h4 class="font-semibold text-sm sm:text-base">Agregados</h4>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
-                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
-                    <img src="assets/images/material-agregados.png" alt="Agregados"
-                      class="max-h-full max-w-full object-contain p-2">
+                  <div class="flex items-center justify-center">
+                    <img src="assets/img/materiales/ladrillo.png" alt="Prefabricados"
+                      class="max-h-full max-w-full object-contain">
                   </div>
                   <div class="p-4 text-center">
-                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Agregados</h4>
+                    <h4 class="font-semibold text-sm sm:text-base">Prefabricados</h4>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
-                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
-                    <img src="assets/images/material-prefabricados.png" alt="Prefabricados"
-                      class="max-h-full max-w-full object-contain p-2">
+                  <div class="flex items-center justify-center">
+                    <img src="assets/img/materiales/plomeria.png" alt="Plomería"
+                      class="max-h-full max-w-full object-contain">
                   </div>
                   <div class="p-4 text-center">
-                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Prefabricados</h4>
+                    <h4 class="font-semibold text-sm sm:text-base">Plomería</h4>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
-                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
-                    <img src="assets/images/material-plomeria.png" alt="Plomería"
-                      class="max-h-full max-w-full object-contain p-2">
+                  <div class="flex items-center justify-center">
+                    <img src="assets/img/materiales/wc.png" alt="Muebles para baño"
+                      class="max-h-full max-w-full object-contain">
                   </div>
                   <div class="p-4 text-center">
-                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Plomería</h4>
+                    <h4 class="font-semibold text-sm sm:text-base">Muebles para baño</h4>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
-                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
-                    <img src="assets/images/material-bano.png" alt="Muebles para baño"
-                      class="max-h-full max-w-full object-contain p-2">
+                  <div class="flex items-center justify-center">
+                    <img src="assets/img/materiales/electrica.png" alt="Material Eléctrico"
+                      class="max-h-full max-w-full object-contain">
                   </div>
                   <div class="p-4 text-center">
-                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Muebles para baño</h4>
+                    <h4 class="font-semibold text-sm sm:text-base">Material Eléctrico</h4>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
-                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
-                    <img src="assets/images/material-electrico.png" alt="Material Eléctrico"
-                      class="max-h-full max-w-full object-contain p-2">
+                  <div class="flex items-center justify-center">
+                    <img src="assets/img/materiales/piso.png" alt="Pisos y azulejos"
+                      class="max-h-full max-w-full object-contain">
                   </div>
                   <div class="p-4 text-center">
-                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Material Eléctrico</h4>
+                    <h4 class="font-semibold text-sm sm:text-base">Pisos y azulejos</h4>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
-                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
-                    <img src="assets/images/material-pisos.png" alt="Pisos y azulejos"
-                      class="max-h-full max-w-full object-contain p-2">
+                  <div class="flex items-center justify-center">
+                    <img src="assets/img/materiales/herramientas.png" alt="Ferretería"
+                      class="max-h-full max-w-full object-contain">
                   </div>
                   <div class="p-4 text-center">
-                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Pisos y azulejos</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 h-full flex flex-col">
-                  <div class="bg-blue-400 h-40 sm:h-48 flex items-center justify-center">
-                    <img src="assets/images/material-ferreteria.png" alt="Ferretería"
-                      class="max-h-full max-w-full object-contain p-2">
-                  </div>
-                  <div class="p-4 text-center">
-                    <h4 class="font-semibold text-gray-700 text-sm sm:text-base">Ferretería</h4>
+                    <h4 class="font-semibold text-sm sm:text-base">Ferretería</h4>
                   </div>
                 </div>
               </div>
@@ -520,11 +525,14 @@
     </section>
 
     <!-- Construye tu futuro / Únete al equipo Section -->
-    <section class="bg-indigo-600 text-white py-16 md:py-24">
+    <section>
+      <h2 class="text-center text-4xl font-bold mb-12">Construye tu futuro con nosotros</h2>
+    </section>
+    <section class="text-white py-16 md:py-24" style="background-color: #5D5A88;">
       <div class="container mx-auto px-6">
         <div class="md:grid md:grid-cols-2 gap-12 items-center">
           <div class="mb-10 md:mb-0 text-center md:text-left">
-            <a href="#" class="text-indigo-300 hover:text-indigo-200 transition-colors text-sm font-semibold mb-2 inline-block">Construye tu futuro con nosotros</a>
+            <!-- <a href="#" class="text-indigo-300 hover:text-indigo-200 transition-colors text-sm font-semibold mb-2 inline-block">Construye tu futuro con nosotros</a> -->
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
               Únete a Patrimonio Hoy y sé parte del equipo que transforma vidas
             </h2>
@@ -533,7 +541,7 @@
             </a>
           </div>
           <div class="flex justify-center md:justify-end">
-            <img src="assets/images/unete-equipo-familia.png" alt="Equipo Patrimonio Hoy con familia" class="rounded-lg shadow-xl w-full max-w-md h-auto object-cover" style="max-height: 450px;">
+            <img src="assets/img/PH-FamiliaFondo_615x540_web_v1 1.png" alt="Equipo Patrimonio Hoy con familia" class="rounded-lg shadow-xl w-full max-w-md h-auto object-cover" style="max-height: 450px;">
           </div>
         </div>
       </div>
@@ -543,14 +551,16 @@
     <section class="py-16 md:py-24 bg-gray-50">
       <div class="container mx-auto px-6">
         <div class="text-center mb-8">
-          <h2 class="text-3xl sm:text-4xl font-bold text-indigo-800 mb-3">Testimoniales</h2>
-          <p class="text-gray-600 max-w-xl mx-auto">Más de 650 mil familias han construido la casa de sus sueño con Patrimonio Hoy. Conoce algunas de sus historias.</p>
+          <h2 class="text-3xl sm:text-4xl font-bold mb-3">Testimoniales</h2>
+          <p class="max-w-xl mx-auto">Más de 650 mil familias han construido la casa de sus sueño con Patrimonio Hoy. Conoce algunas de sus historias.</p>
         </div>
         <div class="flex justify-center md:justify-end space-x-4 mb-8">
-          <a href="#descarga-app-testimonial" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-full shadow-md text-center text-base transition duration-150 ease-in-out flex items-center">
+          <a href="#descarga-app-testimonial"
+            style="background-color: #5D5A88;"
+            class="hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-full shadow-md text-center text-base transition duration-150 ease-in-out flex items-center">
             Descarga la app <span class="ml-2 text-lg">→</span>
           </a>
-          <a href="#dejanos-datos-testimonial" class="bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-2 px-6 rounded-full border border-gray-300 shadow-sm text-center text-base transition duration-150 ease-in-out">
+          <a href="#dejanos-datos-testimonial" class="bg-white hover:bg-gray-100 font-semibold py-2 px-6 rounded-full border border-gray-300 shadow-sm text-center text-base transition duration-150 ease-in-out">
             Déjanos tus datos
           </a>
         </div>
@@ -559,41 +569,41 @@
             <div class="swiper-wrapper pb-12"> <!-- Added pb-12 for pagination dots -->
               <!-- Testimonial Card 1 -->
               <div class="swiper-slide h-auto">
-                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col sm:flex-row items-start h-full border border-gray-200">
-                  <img src="assets/images/testimonial-zoraida.png" alt="Zoraida Magali" class="w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                <div class="bg-white rounded-xl shadow-lg flex flex-col sm:flex-row items-start h-full border border-gray-200">
+                  <img src="assets/img/testimoniales/zoraida.png" alt="Zoraida Magali" class="w-[182px] h-[281px] object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
                   <div>
-                    <p class="text-gray-600 mb-3 text-sm italic leading-relaxed">"Su esfuerzo y dedicación la llevaron a construir su casa desde cero gracias al apoyo de Patrimonio Hoy. Ser madre soltera no fue un obstáculo para lograr darle a sus hijos un hogar en donde pueden vivir y desarrollarse plenamente."</p>
-                    <p class="font-semibold text-indigo-700">Zoraida Magali</p>
+                    <p class="mb-3 text-[18px] leading-relaxed p-6">"Su esfuerzo y dedicación la llevaron a construir su casa desde cero gracias al apoyo de Patrimonio Hoy. Ser madre soltera no fue un obstáculo para lograr darle a sus hijos un hogar en donde pueden vivir y desarrollarse plenamente."</p>
+                    <p class="font-semibold p-6">Zoraida Magali</p>
                   </div>
                 </div>
               </div>
               <!-- Testimonial Card 2 -->
               <div class="swiper-slide h-auto">
-                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col sm:flex-row items-start h-full border border-gray-200">
-                  <img src="assets/images/testimonial-magdalena.png" alt="Magdalena Sánchez" class="w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                <div class="bg-white rounded-xl shadow-lg flex flex-col sm:flex-row items-start h-full border border-gray-200">
+                  <img src="assets/img/testimoniales/magdalena.png" alt="Magdalena Sánchez" class="w-[182px] h-[281px] object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
                   <div>
-                    <p class="text-gray-600 mb-3 text-sm italic leading-relaxed">"Ahora sí ya tenemos nuestra casa donde vivir, mis hijos viven tranquilos, jugando, disfrutan su casa"</p>
-                    <p class="font-semibold text-indigo-700">Magdalena Sánchez</p>
+                    <p class="mb-3 text-[18px] leading-relaxed p-6">"Ahora sí ya tenemos nuestra casa donde vivir, mis hijos viven tranquilos, jugando, disfrutan su casa"</p>
+                    <p class="font-semibold p-6">Magdalena Sánchez</p>
                   </div>
                 </div>
               </div>
               <!-- Testimonial Card 3 -->
               <div class="swiper-slide h-auto">
-                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col sm:flex-row items-start h-full border border-gray-200">
-                  <img src="assets/images/testimonial-esperanza.png" alt="Esperanza Morales" class="w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                <div class="bg-white rounded-xl shadow-lg flex flex-col sm:flex-row items-start h-full border border-gray-200">
+                  <img src="assets/img/testimoniales/esperanza.png" alt="Esperanza Morales" class="w-[182px] h-[281px] object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
                   <div>
-                    <p class="text-gray-600 mb-3 text-sm italic leading-relaxed">"Quería tener una casa grande, no quería vivir en una casa de cartón. No me imaginaba tener una casa como la que tengo ahora"</p>
-                    <p class="font-semibold text-indigo-700">Esperanza Morales</p>
+                    <p class="mb-3 text-[18px] leading-relaxed p-6">"Quería tener una casa grande, no quería vivir en una casa de cartón. No me imaginaba tener una casa como la que tengo ahora"</p>
+                    <p class="font-semibold p-6">Esperanza Morales</p>
                   </div>
                 </div>
               </div>
               <!-- Testimonial Card 4 -->
               <div class="swiper-slide h-auto">
-                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col sm:flex-row items-start h-full border border-gray-200">
-                  <img src="assets/images/testimonial-irma.png" alt="Irma Yolanda" class="w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                <div class="bg-white rounded-xl shadow-lg flex flex-col sm:flex-row items-start h-full border border-gray-200">
+                  <img src="assets/img/testimoniales/irma.png" alt="Irma Yolanda" class="w-[182px] h-[281px] object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
                   <div>
-                    <p class="text-gray-600 mb-3 text-sm italic leading-relaxed">"Ha podido mejorar su casa y la de sus dos hijos."</p>
-                    <p class="font-semibold text-indigo-700">Irma Yolanda</p>
+                    <p class="mb-3 text-[18px] leading-relaxed p-6">"Ha podido mejorar su casa y la de sus dos hijos."</p>
+                    <p class="font-semibold p-6">Irma Yolanda</p>
                   </div>
                 </div>
               </div>
@@ -609,11 +619,13 @@
     <section class="bg-indigo-50 py-16 md:py-20">
       <div class="container px-6 flex flex-row justify-around" >
         <div class="container text-center">
-          <h2 class="text-3xl sm:text-4xl font-bold text-indigo-800 mb-3">Construye tu Patrimonio Hoy</h2>
-          <p class="text-gray-600 mb-8 max-w-lg mx-auto">Déjanos tus datos y pronto nos comunicaremos</p>
+          <h2 class="text-3xl sm:text-4xl font-bold mb-3">Construye tu Patrimonio Hoy</h2>
+          <p class="mb-8 max-w-lg mx-auto">Déjanos tus datos y pronto nos comunicaremos</p>
         </div>
         <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-          <a href="#descarga-app-final" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out">
+          <a href="#descarga-app-final"
+            style="background-color: #5D5A88;"
+            class="hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md text-center text-lg transition duration-150 ease-in-out">
             Descarga la app
           </a>
           <a href="#dejanos-datos-final" class="bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-3 px-8 rounded-full border border-indigo-600 shadow-sm text-center text-lg transition duration-150 ease-in-out">

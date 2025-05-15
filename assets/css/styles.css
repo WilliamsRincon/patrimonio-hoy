@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #5D5A88 !important;
+}
+
+* {
+  font-family: inherit;
+}
+body{
+  background-color: #fff;
+}
+nav a{
+  color: #5D5A88;
+  padding: 0px 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* 
+.materiales-slider .swiper-slide>div  {
+  width: 263px;
+  height: 298px;
+  margin: 0px 10px;
+} */
