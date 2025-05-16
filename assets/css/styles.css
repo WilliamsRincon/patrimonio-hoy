@@ -23,3 +23,11 @@ nav a{
   height: 298px;
   margin: 0px 10px;
 } */
+
+.cta-button {
+  width: 269px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
